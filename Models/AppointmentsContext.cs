@@ -49,9 +49,8 @@ namespace Mission_12.Models
                 new TimeSlot { Id = 21, Booked = false, Date = "03-23-2021", Time = "20:00" }
                 );
         }
-
         public virtual DbSet<Appointment> Appointments { get; set; }
         public virtual DbSet<TimeSlot> TimeSlots { get; set; }
-
+        
     }
 }

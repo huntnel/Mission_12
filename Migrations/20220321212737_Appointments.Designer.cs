@@ -9,7 +9,7 @@ using Mission_12.Models;
 namespace Mission_12.Migrations
 {
     [DbContext(typeof(AppointmentsContext))]
-    [Migration("20220321205942_Appointments")]
+    [Migration("20220321212737_Appointments")]
     partial class Appointments
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

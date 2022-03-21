@@ -14,6 +14,9 @@ namespace Mission_12.Models
             context = temp;
         }
         public IQueryable<TimeSlot> TimeSlots => context.TimeSlots.Include(x => x);
+
+        public IQueryable<TimeSlot> Purchases => throw new NotImplementedException();
+
         public void SaveTimeSlot(TimeSlot Timeslot)
         {
             context.AttachRange(Timeslot);
