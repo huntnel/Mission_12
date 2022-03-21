@@ -1,7 +1,11 @@
-﻿@{
-}
-<div>
-    <form method="POST">
-
-    </form>
+﻿@model Mission_12.Models.ViewModels.TimeSlotViewModel
+<div class="text-center">
+    <h1 class="display-4">The Bilton (Bezos-Hilton) Project</h1>
+    @foreach (TimeSlot t in Model.TimeSlots)
+    {
+        <p>@t.Date</p>
+        <p>@t.Time</p>
+        <br />
+        <br />
+    }
 </div>

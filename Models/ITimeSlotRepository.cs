@@ -7,7 +7,7 @@ namespace Mission_12.Models
 {
     public interface ITimeSlotRepository
     {
-        IQueryable<TimeSlot> Purchases { get; }
+        IQueryable<TimeSlot> TimeSlots { get; }
 
         void SaveTimeSlot(TimeSlot Timeslot);
     }
