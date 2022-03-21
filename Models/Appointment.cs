@@ -19,5 +19,6 @@ namespace Mission_12.Models
         [Required]
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
+        public TimeSlot TimeSlot { get; set; }
     }
 }

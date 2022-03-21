@@ -10,7 +10,6 @@ namespace Mission_12.Models
     {
         public string Time { get; set; }
         public string Date { get; set; }
-        public Appointment Appointment { get; set; }
-
+        public bool Booked { get; set; }
     }
 }
