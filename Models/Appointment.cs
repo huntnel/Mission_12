@@ -11,6 +11,7 @@ namespace Mission_12.Models
         [Key]
         [Required]
         public int AppointmentId { get; set; }
+        public TimeSlot TimeSlot { get; set; }
         [Required]
         public string GroupName { get; set; }
         [Required]
@@ -19,6 +20,5 @@ namespace Mission_12.Models
         [Required]
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
-        public TimeSlot TimeSlot { get; set; }
     }
 }

@@ -31,11 +31,8 @@ namespace Mission_12
             {
                 options.UseSqlite(Configuration["ConnectionStrings:AppointmentDbConnection"]);
             });
-
-            services.AddDbContext<TimeSlotContext>(options =>
-               options.UseSqlite(Configuration["ConnectionStrings:TimeSlotConnection"]));
-
             services.AddScoped<IAppointmentRepository, EFAppointmentRepository>();
+            services.AddScoped<ITimeSlotRepository, EFTimeSlotRepository>();
             services.AddRazorPages();
             services.AddDistributedMemoryCache();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
