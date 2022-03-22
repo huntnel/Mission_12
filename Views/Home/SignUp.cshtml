@@ -1,7 +1,30 @@
 ﻿@{
+    ViewData["Title"] = "Sign Up";
 }
-<div>
-    <form method="POST">
 
+@model Mission_12.Models.Appointment
+<!--Form page for sign up-->
+<div class="text-center">
+    <h1 class="display-4">Temple Tour Sign Up</h1>
+</div>
+
+<div class="container">
+    <form method="post">
+
+        <div asp-validation-summary="All"></div>
+
+        <label asp-for="GroupName">Name of Group:</label>
+        <input asp-for="GroupName" /><br />
+
+        <label asp-for="GroupSize">Size of Group:</label>
+        <input asp-for="GroupSize" type="number" /><br />
+
+        <label asp-for="EmailAddress">Email Address:</label>
+        <input asp-for="EmailAddress" /><br />
+
+        <label asp-for="PhoneNumber">Phone Number:</label>
+        <input asp-for="PhoneNumber" /><br />
+
+        <button type="submit">Book</button>
     </form>
 </div>
