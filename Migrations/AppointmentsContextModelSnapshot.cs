@@ -71,638 +71,638 @@ namespace Mission_12.Migrations
                         new
                         {
                             Id = 1,
-                            Booked = false,
-                            Date = "03-22-2021",
+                            Booked = true,
+                            Date = "2022-03-22",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 2,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 3,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 4,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 5,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 6,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 7,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 8,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 22,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 23,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 24,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 25,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 26,
                             Booked = false,
-                            Date = "03-22-2021",
+                            Date = "2022-03-22",
                             Time = "20:00"
                         },
                         new
                         {
                             Id = 9,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 10,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 11,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 12,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 13,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 14,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 15,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 16,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 17,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 18,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 19,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 20,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 21,
                             Booked = false,
-                            Date = "03-23-2021",
+                            Date = "2022-03-23",
                             Time = "20:00"
                         },
                         new
                         {
                             Id = 27,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 28,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 29,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 30,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 31,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 32,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 33,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 34,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 35,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 36,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 37,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 38,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 39,
                             Booked = false,
-                            Date = "03-24-2021",
+                            Date = "2022-03-24",
                             Time = "20:00"
                         },
                         new
                         {
                             Id = 40,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 41,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 42,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 43,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 44,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 45,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 46,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 47,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 48,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 49,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 50,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 51,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 52,
                             Booked = false,
-                            Date = "03-25-2021",
+                            Date = "2022-03-25",
                             Time = "20:00"
                         },
                         new
                         {
                             Id = 53,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 54,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 55,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 56,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 57,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 58,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 59,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 60,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 61,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 62,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 63,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 64,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 65,
                             Booked = false,
-                            Date = "03-26-2021",
+                            Date = "2022-03-26",
                             Time = "20:00"
                         },
                         new
                         {
                             Id = 66,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 67,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 68,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 69,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 70,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 71,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 72,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 73,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 74,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 75,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 76,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 77,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 78,
                             Booked = false,
-                            Date = "03-27-2021",
+                            Date = "2022-03-27",
                             Time = "20:00"
                         },
                         new
                         {
                             Id = 79,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "08:00"
                         },
                         new
                         {
                             Id = 80,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "09:00"
                         },
                         new
                         {
                             Id = 81,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "10:00"
                         },
                         new
                         {
                             Id = 82,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "11:00"
                         },
                         new
                         {
                             Id = 83,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "12:00"
                         },
                         new
                         {
                             Id = 84,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "13:00"
                         },
                         new
                         {
                             Id = 85,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "14:00"
                         },
                         new
                         {
                             Id = 86,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "15:00"
                         },
                         new
                         {
                             Id = 87,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "16:00"
                         },
                         new
                         {
                             Id = 88,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "17:00"
                         },
                         new
                         {
                             Id = 89,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "18:00"
                         },
                         new
                         {
                             Id = 90,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "19:00"
                         },
                         new
                         {
                             Id = 91,
                             Booked = false,
-                            Date = "03-28-2021",
+                            Date = "2022-03-28",
                             Time = "20:00"
                         });
                 });

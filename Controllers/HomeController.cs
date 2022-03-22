@@ -14,6 +14,7 @@ namespace Mission_12.Controllers
     {
 
         private ITimeSlotRepository repo;
+        private IAppointmentRepository Arepo;
 
         private readonly ILogger<HomeController> _logger;
 
@@ -23,14 +24,43 @@ namespace Mission_12.Controllers
             repo = temp;
         }
 
+        // Return the home page
         public IActionResult Index()
         {
             return View();
         }
 
+
+        //The following two routes are for the form to create an appointment.
+        [HttpGet]
+        public IActionResult Form(string time, string date)
+        {
+            ViewBag.Time = time;
+            ViewBag.Date = "2022-03-22";
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Form(Appointment a)
+        {
+            if (ModelState.IsValid)
+            {
+                Arepo.CreateAppointment(a);
+                Arepo.SaveAppointment(a);
+                return View("Home", a);
+            }
+            else
+            {
+                ViewBag.Appointments = Arepo.Appointments.ToList();
+                return View(a);
+            }
+        }
+
+        // The following route is for displaying the times based on the date that the user selects.
+        [HttpGet]
         public IActionResult SignUp()
         {
-            string date = "03-22-2021";
+            string date = "2022-03-22";
             var x = new TimeSlotViewModel
             {
                 TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
@@ -42,10 +72,34 @@ namespace Mission_12.Controllers
             return View(x);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+
+        // The following actions are for editing and deleting appointments.
+        [HttpGet]
+        public IActionResult Edit(int appointmentId)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            ViewBag.Categories = Arepo.Appointments.ToList();
+            var aptEntry = Arepo.Appointments.Single(x => x.AppointmentId == appointmentId);
+            return View("SignUp", aptEntry);
+        }
+        [HttpPost]
+        public IActionResult Edit(Appointment a)
+        {
+            Arepo.SaveAppointment(a);
+            Arepo.SaveAppointment(a);
+            return RedirectToAction("Appointments");
+        }
+        [HttpGet]
+        public IActionResult Delete(int appointmentId)
+        {
+            var aptEntry = Arepo.Appointments.Single(x => x.AppointmentId == appointmentId);
+            return View(aptEntry);
+        }
+        [HttpPost]
+        public IActionResult Delete(Appointment a)
+        {
+            Arepo.DeleteAppointment(a);
+            Arepo.SaveAppointment(a);
+            return RedirectToAction("Appointments");
         }
     }
 }

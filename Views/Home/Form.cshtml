@@ -1,0 +1,28 @@
+﻿@{
+}
+
+@model Mission_12.Models.Appointment
+<div class="container">
+    <form method="post">
+
+        <div asp-validation-summary="All"></div>
+        <input type="date" value="@ViewBag.Date" disabled />
+        <br />
+        <input type="time" value="@ViewBag.Time" disabled />
+        <br />
+
+        <label asp-for="GroupName">Name of Group:</label>
+        <input asp-for="GroupName" /><br />
+
+        <label asp-for="GroupSize">Size of Group:</label>
+        <input asp-for="GroupSize" type="number" /><br />
+
+        <label asp-for="EmailAddress">Email Address:</label>
+        <input asp-for="EmailAddress" /><br />
+
+        <label asp-for="PhoneNumber">Phone Number:</label>
+        <input asp-for="PhoneNumber" /><br />
+
+        <button type="submit">Book</button>
+    </form>
+</div>

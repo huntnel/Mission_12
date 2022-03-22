@@ -3,9 +3,8 @@
     <h1 class="display-4">The Bilton (Bezos-Hilton) Project</h1>
     @foreach (TimeSlot t in Model.TimeSlots)
     {
-        <p>@t.Date</p>
-        <p>@t.Time</p>
-        <br />
-        <br />
+
+           <a class="btn" asp-for="Home" asp-action="Form" asp-route-time="@t.Time" asp-route-date="@t.Date">@t.Time</a>
+           <br />
     }
 </div>
