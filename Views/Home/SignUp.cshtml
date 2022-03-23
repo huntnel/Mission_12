@@ -1,10 +1,26 @@
 ﻿@model Mission_12.Models.ViewModels.TimeSlotViewModel
+    
 <div class="text-center">
     <h1 class="display-4">The Bilton (Bezos-Hilton) Project</h1>
-    @foreach (TimeSlot t in Model.TimeSlots)
-    {
+    <br />
 
-           <a class="btn" asp-for="Home" asp-action="Form" asp-route-time="@t.Time" asp-route-date="@t.Date">@t.Time</a>
-           <br />
-    }
-</div>
+    <div class="row">
+
+        @foreach (TimeSlot t in Model.TimeSlots.Take(7))
+        {
+            <div class="col">
+
+                <h4>@t.Date</h4>
+
+                @foreach (TimeSlot x in Model.TimeSlots.Where(x => x.Date == t.Date))
+                {
+                    <a class="btn" asp-for="Home" asp-action="Form" asp-route-time="@x.Time" asp-route-date="@t.Date">@x.Time</a>
+                    <br />
+                }
+
+            </div>
+        }
+
+    </div>
+   
+</div> 

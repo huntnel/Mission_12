@@ -36,7 +36,7 @@ namespace Mission_12.Controllers
         public IActionResult Form(string time, string date)
         {
             ViewBag.Time = time;
-            ViewBag.Date = "2022-03-22";
+            ViewBag.Date = date;
             return View();
         }
 
@@ -60,11 +60,13 @@ namespace Mission_12.Controllers
         [HttpGet]
         public IActionResult SignUp()
         {
-            string date = "2022-03-22";
+            //string date = "2022-03-22";
             var x = new TimeSlotViewModel
             {
-                TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
-                .OrderBy(t => t.Time)
+                //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
+                //.OrderBy(t => t.Time)
+
+                TimeSlots = repo.TimeSlots.OrderBy(t => t.Date).OrderBy(t => t.Time)
             };
             
             /*var TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
