@@ -8,17 +8,26 @@
 
         @foreach (TimeSlot t in Model.TimeSlots.Take(7))
         {
-            <div class="col">
+        <div class="col">
 
-                <h4>@t.Date</h4>
+            <h4>@t.Date</h4>
 
-                @foreach (TimeSlot x in Model.TimeSlots.Where(x => x.Date == t.Date))
+            @foreach (TimeSlot x in Model.TimeSlots.Where(x => x.Date == t.Date))
+            {
+                @if (x.Booked == true)
                 {
-                    <a class="btn" asp-for="Home" asp-action="Form" asp-route-time="@x.Time" asp-route-date="@t.Date">@x.Time</a>
+                    <a class="font-weight-light">@x.Time</a>
+                    <br />
+                }
+                else
+                {   
+                    <a class="btn btn-primary" asp-for="Home" asp-action="Form" asp-route-time="@x.Time" asp-route-date="@t.Date">@x.Time</a>
                     <br />
                 }
 
-            </div>
+            }
+
+        </div>
         }
 
     </div>
