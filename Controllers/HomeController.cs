@@ -42,8 +42,10 @@ namespace Mission_12.Controllers
         }
 
         [HttpPost]
-        public IActionResult Form(Appointment a)
+        public IActionResult Form(Appointment a, string time, string date)
         {
+            ViewBag.Time = time;
+            ViewBag.Date = date;
             if (ModelState.IsValid)
             {
                 Arepo.CreateAppointment(a);

@@ -24,6 +24,7 @@
         <label asp-for="PhoneNumber">Phone Number:</label>
         <input asp-for="PhoneNumber" /><br />
 
-        <button type="submit">Book</button>
+
+        <button asp-action="Form" asp-route-time="@ViewBag.Time" asp-route-date="@ViewBag.Date" type="submit">Book</button>
     </form>
 </div>
