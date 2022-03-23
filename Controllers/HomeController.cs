@@ -18,10 +18,11 @@ namespace Mission_12.Controllers
 
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, ITimeSlotRepository temp)
+        public HomeController(ILogger<HomeController> logger, ITimeSlotRepository temp, IAppointmentRepository hunterisachump)
         {
             _logger = logger;
             repo = temp;
+            Arepo = hunterisachump;
         }
 
         // Return the home page
@@ -47,7 +48,7 @@ namespace Mission_12.Controllers
             {
                 Arepo.CreateAppointment(a);
                 Arepo.SaveAppointment(a);
-                return View("Home", a);
+                return View("Index", a);
             }
             else
             {
