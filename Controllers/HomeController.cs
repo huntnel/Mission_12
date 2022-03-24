@@ -99,29 +99,43 @@ namespace Mission_12.Controllers
         [HttpGet]
         public IActionResult Edit(int appointmentId)
         {
-            ViewBag.Categories = Arepo.Appointments.ToList();
+            ViewBag.Appointments = Arepo.Appointments.ToList();
+             
             var aptEntry = Arepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            return View("SignUp", aptEntry);
+            ViewBag.ts = aptEntry.TimeSlotId;
+            return View(aptEntry);
         }
         [HttpPost]
         public IActionResult Edit(Appointment a)
         {
             Arepo.SaveAppointment(a);
-            Arepo.SaveAppointment(a);
-            return RedirectToAction("Appointments");
+            var x = new AppointmentViewModel
+            {
+                //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
+                //.OrderBy(t => t.Time)
+                Appointments = Arepo.Appointments.OrderBy(a => a.TimeSlot)
+            };
+            return RedirectToAction("AppointmentList", x);
         }
         [HttpGet]
         public IActionResult Delete(int appointmentId)
         {
             var aptEntry = Arepo.Appointments.Single(x => x.AppointmentId == appointmentId);
-            return View(aptEntry);
+            Arepo.DeleteAppointment(aptEntry);
+            var x = new AppointmentViewModel
+            {
+                //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
+                //.OrderBy(t => t.Time)
+                Appointments = Arepo.Appointments.OrderBy(a => a.TimeSlot)
+            };
+            return View("AppointmentList", x);
         }
-        [HttpPost]
-        public IActionResult Delete(Appointment a)
-        {
-            Arepo.DeleteAppointment(a);
-            Arepo.SaveAppointment(a);
-            return RedirectToAction("Appointments");
-        }
+        //[HttpPost]
+        //public IActionResult Delete(Appointment a)
+        //{
+        //    Arepo.DeleteAppointment(a);
+        //    Arepo.SaveAppointment(a);
+        //    return RedirectToAction("AppointmentList");
+        //}
     }
 }
