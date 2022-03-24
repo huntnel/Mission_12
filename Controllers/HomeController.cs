@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Mission_12.Models;
 using Mission_12.Models.ViewModels;
@@ -52,8 +53,6 @@ namespace Mission_12.Controllers
 
             {
                 Arepo.CreateAppointment(a);
-                
-                
                 Arepo.SaveAppointment(a);
                 return View("Index", a);
             }
@@ -91,7 +90,7 @@ namespace Mission_12.Controllers
             {
                 //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
                 //.OrderBy(t => t.Time)
-                Appointments = Arepo.Appointments.OrderBy(a => a.TimeSlot)
+                Appointments = Arepo.Appointments.Include(x => x.TimeSlot).OrderBy(a => a.TimeSlot)
             };
             return View(x);
             

@@ -19,12 +19,12 @@
         @foreach (var x in Model.Appointments)
         {
             <tr>
-                @*<td>@x.TimeSlot.Date</td>*@
+                <td>@x.TimeSlot.Date</td>
                 <td>@x.GroupName</td>
                 <td>@x.GroupSize</td>
                 <td>@x.EmailAddress</td>
                 <td>@x.PhoneNumber</td>
-                @*<td>@x.TimeSlot.Time</td>*@
+                <td>@x.TimeSlot.Time</td>
                 <td><a asp-controller="Home" asp-action="Edit" asp-route-appointmentId="@x.AppointmentId">Edit</a></td>
                 <td><a asp-controller="Home" asp-action="Delete" asp-route-appointmentId="@x.AppointmentId">Delete</a></td>
             </tr>
