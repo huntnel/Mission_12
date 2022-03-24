@@ -2,8 +2,7 @@
     ViewData["Title"] = "Appointment List";
 }
 
-@model List<Appointment>
-
+@model Mission_12.Models.ViewModels.AppointmentViewModel
 <table class="table table-bordered table-striped">
     <thead class="font-weight-bold">
         <tr>
@@ -17,15 +16,15 @@
     </thead>
 
     <tbody>
-        @foreach (var x in Model)
+        @foreach (var x in Model.Appointments)
         {
             <tr>
-                <td>Date Placeholder</td>
+                <td>@x.TimeSlot.Date</td>
                 <td>@x.GroupName</td>
                 <td>@x.GroupSize</td>
                 <td>@x.EmailAddress</td>
                 <td>@x.PhoneNumber</td>
-                <td>@x.TimeSlot</td>
+                <td>@x.TimeSlot.Time</td>
                 <td><a asp-controller="Home" asp-action="Edit" asp-route-movieEntryID="@x.AppointmentId">Edit</a></td>
                 <td><a asp-controller="Home" asp-action="Delete" asp-route-movieEntryID="@x.AppointmentId">Delete</a></td>
             </tr>

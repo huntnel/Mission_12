@@ -34,21 +34,28 @@ namespace Mission_12.Controllers
 
         //The following two routes are for the form to create an appointment.
         [HttpGet]
-        public IActionResult Form(string time, string date)
+        public IActionResult Form(string time, string date, TimeSlot id)
         {
             ViewBag.Time = time;
             ViewBag.Date = date;
+            ViewBag.Id = id;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Form(Appointment a, string time, string date)
+        public IActionResult Form(Appointment a, string time, string date, TimeSlot id)
         {
             ViewBag.Time = time;
             ViewBag.Date = date;
+            ViewBag.Id = id;
+            //TimeSlot TimeSlots = repo.TimeSlots.Where(t => t.Id == id) as TimeSlot;
+            //a.TimeSlot = TimeSlots;
             if (ModelState.IsValid)
+
             {
                 Arepo.CreateAppointment(a);
+                
+                
                 Arepo.SaveAppointment(a);
                 return View("Index", a);
             }
@@ -79,6 +86,18 @@ namespace Mission_12.Controllers
 
 
         // The following actions are for editing and deleting appointments.
+        [HttpGet]
+        public IActionResult AppointmentList()
+        {
+            var x = new AppointmentViewModel
+            {
+                //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
+                //.OrderBy(t => t.Time)
+                Appointments = Arepo.Appointments.OrderBy(a => a.TimeSlot)
+            };
+            return View(x);
+            
+        }
         [HttpGet]
         public IActionResult Edit(int appointmentId)
         {
