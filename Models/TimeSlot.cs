@@ -10,7 +10,7 @@ namespace Mission_12.Models
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public int TimeSlotId { get; set; }
         [Required]
         public string Time { get; set; }
         [Required]

@@ -11,7 +11,7 @@
         <br />
         <input type="time" value="@ViewBag.Time" disabled />
         <br />
-        <input type="hidden" value="@ViewBag.Id" asp-for="TimeSlot"/>
+        <input type="hidden" value="@ViewBag.ts" asp-for="TimeSlotId"/>
 
         <label asp-for="GroupName">Name of Group:</label>
         <input asp-for="GroupName" /><br />
@@ -26,6 +26,6 @@
         <input asp-for="PhoneNumber" /><br />
 
 
-        <button asp-action="Form" asp-route-time="@ViewBag.Time" asp-route-date="@ViewBag.Date" as type="submit">Book</button>
+        <button asp-action="Form" asp-route-time="@ViewBag.Time" asp-route-ts="@ViewBag.ts" asp-route-date="@ViewBag.Date" as type="submit">Book</button>
     </form>
 </div>

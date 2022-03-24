@@ -34,22 +34,20 @@ namespace Mission_12.Controllers
 
         //The following two routes are for the form to create an appointment.
         [HttpGet]
-        public IActionResult Form(string time, string date, TimeSlot id)
+        public IActionResult Form(string time, string date, int ts)
         {
             ViewBag.Time = time;
             ViewBag.Date = date;
-            ViewBag.Id = id;
+            ViewBag.ts = ts;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Form(Appointment a, string time, string date, TimeSlot id)
+        public IActionResult Form(Appointment a, string time, string date, int ts)
         {
             ViewBag.Time = time;
             ViewBag.Date = date;
-            ViewBag.Id = id;
-            //TimeSlot TimeSlots = repo.TimeSlots.Where(t => t.Id == id) as TimeSlot;
-            //a.TimeSlot = TimeSlots;
+            ViewBag.ts = ts;
             if (ModelState.IsValid)
 
             {

@@ -11,6 +11,7 @@ namespace Mission_12.Models
         [Key]
         [Required]
         public int AppointmentId { get; set; }
+        public int TimeSlotId { get; set; }
         public TimeSlot TimeSlot { get; set; }
         [Required]
         public string GroupName { get; set; }
