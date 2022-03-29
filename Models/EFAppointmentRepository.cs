@@ -16,6 +16,7 @@ namespace Mission_12.Models
 
         public void SaveAppointment(Appointment a)
         {
+            context.Update(a);
             context.SaveChanges();
         }
 

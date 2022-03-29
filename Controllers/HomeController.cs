@@ -58,7 +58,7 @@ namespace Mission_12.Controllers
             }
             else
             {
-                ViewBag.Appointments = Arepo.Appointments.ToList();
+                ViewBag.Appointments = Arepo.Appointments.Include(x => x.TimeSlot).ToList();
                 return View(a);
             }
         }
@@ -100,19 +100,22 @@ namespace Mission_12.Controllers
         {
             ViewBag.Appointments = Arepo.Appointments.ToList();
              
-            var aptEntry = Arepo.Appointments.Single(x => x.AppointmentId == appointmentId);
+            var aptEntry = Arepo.Appointments.Include(x => x.TimeSlot).Single(x => x.AppointmentId == appointmentId);
             ViewBag.ts = aptEntry.TimeSlotId;
             return View(aptEntry);
         }
         [HttpPost]
         public IActionResult Edit(Appointment a)
         {
-            Arepo.SaveAppointment(a);
+            if(ModelState.IsValid)
+            {
+                Arepo.SaveAppointment(a);
+            }
             var x = new AppointmentViewModel
             {
                 //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
                 //.OrderBy(t => t.Time)
-                Appointments = Arepo.Appointments.OrderBy(a => a.TimeSlot)
+                Appointments = Arepo.Appointments.Include(x => x.TimeSlot).OrderBy(a => a.TimeSlot)
             };
             return RedirectToAction("AppointmentList", x);
         }
@@ -125,7 +128,7 @@ namespace Mission_12.Controllers
             {
                 //TimeSlots = repo.TimeSlots.Where(t => t.Date == date)
                 //.OrderBy(t => t.Time)
-                Appointments = Arepo.Appointments.OrderBy(a => a.TimeSlot)
+                Appointments = Arepo.Appointments.Include(x => x.TimeSlot).OrderBy(a => a.TimeSlot)
             };
             return View("AppointmentList", x);
         }

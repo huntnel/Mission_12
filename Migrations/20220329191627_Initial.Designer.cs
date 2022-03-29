@@ -8,7 +8,7 @@ using Mission_12.Models;
 namespace Mission_12.Migrations
 {
     [DbContext(typeof(AppointmentsContext))]
-    [Migration("20220324003252_Initial")]
+    [Migration("20220329191627_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,7 +72,7 @@ namespace Mission_12.Migrations
                         new
                         {
                             TimeSlotId = 1,
-                            Booked = true,
+                            Booked = false,
                             Date = "2022-03-22",
                             Time = "08:00"
                         },

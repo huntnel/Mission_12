@@ -16,7 +16,7 @@ namespace Mission_12.Models
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.Entity<TimeSlot>().HasData(
-                new TimeSlot { TimeSlotId = 1, Booked = true, Date = "2022-03-22", Time = "08:00" },
+                new TimeSlot { TimeSlotId = 1, Booked = false, Date = "2022-03-22", Time = "08:00" },
                 new TimeSlot { TimeSlotId = 2, Booked = false, Date = "2022-03-22", Time = "09:00" },
                 new TimeSlot { TimeSlotId = 3, Booked = false, Date = "2022-03-22", Time = "10:00" },
                 new TimeSlot { TimeSlotId = 4, Booked = false, Date = "2022-03-22", Time = "11:00" },

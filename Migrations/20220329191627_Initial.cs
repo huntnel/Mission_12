@@ -47,7 +47,7 @@ namespace Mission_12.Migrations
             migrationBuilder.InsertData(
                 table: "TimeSlots",
                 columns: new[] { "TimeSlotId", "Booked", "Date", "Time" },
-                values: new object[] { 1, true, "2022-03-22", "08:00" });
+                values: new object[] { 1, false, "2022-03-22", "08:00" });
 
             migrationBuilder.InsertData(
                 table: "TimeSlots",

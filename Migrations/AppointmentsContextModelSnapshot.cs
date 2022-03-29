@@ -70,7 +70,7 @@ namespace Mission_12.Migrations
                         new
                         {
                             TimeSlotId = 1,
-                            Booked = true,
+                            Booked = false,
                             Date = "2022-03-22",
                             Time = "08:00"
                         },

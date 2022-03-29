@@ -4,8 +4,9 @@
 @model Mission_12.Models.Appointment
 <div class="container">
     <form method="post">
-
         <div asp-validation-summary="All"></div>
+
+        <input type="hidden" asp-for="AppointmentId" />
 
         <input type="date" value="@ViewBag.Date" disabled />
         <br />
@@ -26,6 +27,6 @@
         <input asp-for="PhoneNumber" /><br />
 
 
-        <button asp-action="Edit" asp-route-time="@ViewBag.Time" asp-route-ts="@ViewBag.ts" asp-route-date="@ViewBag.Date" as type="submit">Save</button>
+        <button asp-action="Edit" asp-route-time="@ViewBag.Time" asp-route-ts="@ViewBag.ts" asp-route-date="@ViewBag.Date" type="submit">Save</button>
     </form>
 </div>
